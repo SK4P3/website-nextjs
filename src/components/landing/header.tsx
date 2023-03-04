@@ -1,6 +1,7 @@
 import alex from '../../../public/alex.png';
 import cookie2 from '../../../public/cookie2.jpg';
 import Image from 'next/image';
+import SlideButton from '../slide-button/slide-button';
 
 export default function LandingHeader() {
     return (
@@ -17,8 +18,8 @@ export default function LandingHeader() {
                             <p>on the website, maybe you can find them :)</p>
                         </div>
                         <div className="mt-12 flex flex-col items-center -ml-10 sm:ml-0 sm:flex-row gap-8 uppercase">
-                            {/* <app-slide-button text="my work" href="#projects"></app-slide-button> */}
-                            {/* <app-slide-button text="get in touch" href="#contact"></app-slide-button> */}
+                            <SlideButton text="my work" href="/#projects" />
+                            <SlideButton text="get in touch" href="/#contact" />
                         </div>
                     </div>
                 </div>

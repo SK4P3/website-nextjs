@@ -16,10 +16,10 @@ export default function Navbar(props: any) {
                 <div className="hidden sm:block">
                     <div className="fixed right-8 h-screen flex items-center text-[4rem] z-50">
                         <div className="flex flex-col gap-4 justify-center items-center w-4 my-8">
-                            <a className="dotActive" href="#home"></a>
-                            <a className="dot" href="#about"></a>
-                            <a className="dot" href="#projects"></a>
-                            <a className="dot" href="#contact"></a>
+                            <a id='dot1' className="dotActive" href="#home"></a>
+                            <a id='dot2' className="dot" href="#about"></a>
+                            <a id='dot3' className="dot" href="#projects"></a>
+                            <a id='dot4' className="dot" href="#contact"></a>
                         </div>
                     </div>
                 </div>

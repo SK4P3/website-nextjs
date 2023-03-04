@@ -40,10 +40,11 @@ export default function LandingTimeline() {
                     <div className="timelinedot top-[100%]"></div>
                     <div className="absolute -mt-6 w-[80vw] left-8 h-16 flex flex-col sm:flex-row items-center justify-center font-bold text-2xl text-white text-center top-[100%]">
                         <div className="relative w-screen flex items-center jusitfy-center">
-                            <div className="hidden sm:block left-[10vw] absolute w-[60vw] h-[0.1rem] bg-white"></div>
+                            <div className="hidden sm:block left-[10vw] absolute top-7 w-[20vw] h-[0.1rem] bg-white"></div>
+                            <div className="hidden sm:block right-[10vw] absolute top-7 w-[20vw] h-[0.1rem] bg-white"></div>
                             <div className="asolute z-10 w-full flex justify-center">
                                 <h2 className="absolute text-transparent pointer-events-none -z-10">Alex Schnabls Projects</h2>
-                                <h3 className="font-medium text-white text-[3rem] bg-neutral-900 py-2 px-8">My Projects</h3>
+                                <h3 className="font-medium text-white text-[3rem] py-2 px-8">My Projects</h3>
                             </div>
                         </div>
                     </div>
