@@ -10,6 +10,8 @@ import Navbar from "@/components/navbar"
 type ProjectProps = {};
 type ProjectState = {};
 
+// todo favicon, blog entries, sitemap.xml,
+
 export default class Home extends React.Component<ProjectProps, ProjectState> {
 
   constructor(props: any) {
@@ -51,6 +53,9 @@ export default class Home extends React.Component<ProjectProps, ProjectState> {
   render() {
     return (
       <div id="box" className="parent relative" onScroll={this.onScroll}>
+        <title>Alex Schnabl | Personal Website</title>
+        <meta name="description" content="Welcome to my personal website. Here you can find my most recent projects, some information about me and my contact details." />
+        <meta name="keywords" content="alex schnabl, alexander schnabl, software developer, alex schnabl software, alex schnabl contact" />
         <Navbar showDots={true}></Navbar>
         <div className="h-screen bg-neutral-900">
           <a id="home"></a>

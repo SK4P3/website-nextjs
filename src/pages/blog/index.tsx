@@ -3,6 +3,9 @@ import Navbar from "@/components/navbar";
 export default function Blog() {
     return (
         <div>
+            <title>Alex Schnabl | Blog </title>
+            <meta name="description" content="My blog section where I post random stuff once in a while. Be sure to check it out" />
+            <meta name="keywords" content="alex schnabl blog, blog, alexander schnabl, software developer, alex schnabl software, alex schnabl blog" />
             <Navbar showDots={false}></Navbar>
             <div className="h-screen bg-neutral-900 pt-[8vh]">
                 <div className="relative w-screen flex items-center jusitfy-center">
