@@ -118,12 +118,12 @@ export default function article1() {
                         <li>
                             Create the file <b className="keyboard-shortcut">res/xml/network_security_config.xml</b> with the content:
                             <div className="h-1 my-2" />
-                            <CopyBlock
+                            {/* <CopyBlock
                                 text={network_security_config_xml}
                                 language="html"
                                 theme={dracula}
                                 wrapLines
-                            />
+                            /> */}
                         </li>
                         <li>
                             Replace <b className="keyboard-shortcut">fb_network_security_config</b>&nbsp;in&nbsp;
