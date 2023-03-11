@@ -6,11 +6,12 @@ import LandingHeader from "@/components/landing/header"
 import LandingProjects from "@/components/landing/projects"
 import LandingTimeline from "@/components/landing/timeline"
 import Navbar from "@/components/navbar"
+import Head from "next/head";
 
 type ProjectProps = {};
 type ProjectState = {};
 
-// todo favicon, blog entries, sitemap.xml,
+// todo favicon, blog entries, sitemap.xml, image alts, image titles
 
 export default class Home extends React.Component<ProjectProps, ProjectState> {
 
@@ -53,9 +54,11 @@ export default class Home extends React.Component<ProjectProps, ProjectState> {
   render() {
     return (
       <div id="box" className="parent relative" onScroll={this.onScroll}>
-        <title>Alex Schnabl | Personal Website</title>
-        <meta name="description" content="Welcome to my personal website. Here you can find my most recent projects, some information about me and my contact details." />
-        <meta name="keywords" content="alex schnabl, alexander schnabl, software developer, alex schnabl software, alex schnabl contact" />
+        <Head>
+          <title>Alex Schnabl | Personal Website</title>
+          <meta name="description" content="Welcome to my personal website. Here you can find my most recent projects, some information about me and my contact details." />
+          <meta name="keywords" content="alex schnabl, alexander schnabl, software developer, alex schnabl software, alex schnabl contact" />
+        </Head>
         <Navbar showDots={true}></Navbar>
         <div className="h-screen bg-neutral-900">
           <a id="home"></a>
@@ -66,7 +69,7 @@ export default class Home extends React.Component<ProjectProps, ProjectState> {
           <LandingProjects />
           <a id="contact"></a>
           <LandingContact />
-          <Footer />
+          <Footer fullScreen={true} />
         </div>
       </div>
     )

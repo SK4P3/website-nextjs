@@ -1,0 +1,42 @@
+.article {
+    @apply px-[10vw] h-full w-[70vw] text-justify
+}
+
+.article-content a {
+    @apply underline
+}
+
+.article-h1 {
+    @apply text-3xl font-bold my-4 underline
+}
+
+.article-h2 {
+    @apply text-2xl my-6 font-bold
+}
+
+.article-h3 {
+    @apply text-xl my-4 font-bold
+}
+
+.article-overview-list {
+    @apply pl-4 flex flex-col gap-4 list-decimal font-medium list-inside
+}
+
+.article-overview-list li {
+    @apply hover:underline
+}
+
+.article-list {
+    @apply pl-4 flex flex-col gap-4 list-decimal list-inside my-2
+}
+
+.keyboard-shortcut {
+    @apply text-sm font-bold bg-neutral-500 rounded-md py-0.5 px-1
+}
+
+.anchor {
+    display: block;
+    height: 115px;
+    margin-top: -115px;
+    visibility: hidden;
+}
