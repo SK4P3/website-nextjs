@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import proxyman from '../../../public/blog/proxyman.jpg';
 export default function BlogCard(props: any) {
     return (
         <a
-            href={'blog/' + props.title.toLowerCase().replaceAll(" ", "-")}
+            href={'blog/articles/' + props.title.toLowerCase().replaceAll(" ", "-")}
             className="w-full bg-neutral-800 rounded-md h-auto text-white p-4 flex items-center gap-4 hover:underline cursor-pointer"
         >
             <div className='w-1/5 rounded-md overflow-hidden'>

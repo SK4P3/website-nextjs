@@ -1,10 +1,10 @@
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { CopyBlock, dracula } from "react-code-blocks";
-import fbsettings from '../../../public/blog/fbsettings.png';
-import sslProxyList from '../../../public/blog/sslProxyList.png';
-import igsettings from '../../../public/blog/igsettings.png';
-import proxymanResult from '../../../public/blog/proxymanResult.png';
+import fbsettings from './fbsettings.png';
+import sslProxyList from './sslProxyList.png';
+import igsettings from './igsettings.png';
+import proxymanResult from './proxymanResult.png';
 import CommentSection from "@/components/comments";
 import Footer from "@/components/footer";
 import Head from "next/head";
@@ -118,12 +118,12 @@ export default function article1() {
                         <li>
                             Create the file <b className="keyboard-shortcut">res/xml/network_security_config.xml</b> with the content:
                             <div className="h-1 my-2" />
-                            {/* <CopyBlock
+                            <CopyBlock
                                 text={network_security_config_xml}
                                 language="html"
                                 theme={dracula}
                                 wrapLines
-                            /> */}
+                            />
                         </li>
                         <li>
                             Replace <b className="keyboard-shortcut">fb_network_security_config</b>&nbsp;in&nbsp;
